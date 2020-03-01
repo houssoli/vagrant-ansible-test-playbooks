@@ -1,0 +1,9 @@
+Host *
+    StrictHostKeyChecking no
+    UserKnownHostsFile=/dev/null
+
+#Host 192.168.*.*
+#    ProxyCommand ssh -W %h:%p vagrant@X.X.X.X
+
+#Host 192.232.*.*
+#    ProxyCommand ssh -W %h:%p vagrant@X.X.X.X

@@ -1,0 +1,11 @@
+---
+- name: Manage users
+  hosts: all
+  become: true
+  gather_facts: true
+
+  roles:
+    - manage-users
+
+  vars_files:
+    - ../../../vagrant-ansible-test-vars/inventories/{{ CURR_ENV }}/vars/user.yml

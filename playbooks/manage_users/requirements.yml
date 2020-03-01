@@ -1,0 +1,5 @@
+---
+- name: manage-users
+  src: ssh://git@git@github.com:houssoli/ansible-role-manage-users.git
+  scm: git
+  version: develop

@@ -1,0 +1,6 @@
+[defaults]
+hostfile = ../vagrant-ansible-test-vars/inventories/vagrant
+remote_user = vagrant
+
+[ssh_connection]
+pipelining = True
