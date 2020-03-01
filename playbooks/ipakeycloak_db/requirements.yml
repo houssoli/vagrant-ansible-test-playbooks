@@ -1,0 +1,5 @@
+---
+- name: postgresql
+  src: git@github.com:houssoli/ansible-role-postgresql.git
+  scm: git
+  version: develop

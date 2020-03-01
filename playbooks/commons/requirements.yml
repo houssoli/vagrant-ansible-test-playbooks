@@ -1,0 +1,10 @@
+---
+- name: commons
+  src: git@github.com:houssoli/ansible-role-common-tools.git
+  scm: git
+  version: master
+
+- name: repo-epel
+  src: git@github.com:geerlingguy/ansible-role-repo-epel.git
+  scm: git
+  version: master

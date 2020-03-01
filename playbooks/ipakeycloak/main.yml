@@ -1,0 +1,8 @@
+---
+- name: Converge Keycloak server group 
+  hosts: ipakeycloak
+  become: true
+  gather_facts: true
+
+  roles:
+    - keycloak

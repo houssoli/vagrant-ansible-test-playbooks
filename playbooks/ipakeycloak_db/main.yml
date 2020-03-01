@@ -1,0 +1,8 @@
+---
+- name: Converge keycloak database
+  hosts: ipakeycloak_db
+  become: true
+  gather_facts: true
+
+  roles:
+    - postgresql

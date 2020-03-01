@@ -10,7 +10,6 @@
 
   pre_tasks:
     - name: Include common variables and define needed variables.
-      # include_vars: "../../../vagrant-ansible-test-vars/vars/common.yml"
       include_vars: "../../../vagrant-ansible-test-vars/vars/admin-accounts.yml"
 
     - name: Include version-specific variables for CentOS/RHEL.
@@ -34,4 +33,4 @@
 
   roles:
     - { role: repo-epel, when: ansible_os_family == 'RedHat' }
-    - { role: common }
+    - { role: commons }

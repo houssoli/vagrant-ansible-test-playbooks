@@ -1,6 +1,8 @@
 ---
 # Main playbook which applies the different roles and/or tasks to groups and hosts in of the inventory.
 
-#- import_playbook: ./playbooks/commons/playbook.yml
-#- import_playbook: ./playbooks/manage_users/playbook.yml
-
+- import_playbook: ./playbooks/commons/main.yml
+- import_playbook: ./playbooks/manage_users/main.yml
+- import_playbook: ../ansible-freeipa/playbooks/install-cluster.yml
+- import_playbook: ./playbooks/ipakeycloak_db/main.yml
+- import_playbook: ./playbooks/ipakeycloak/main.yml

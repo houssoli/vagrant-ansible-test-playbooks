@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# But descend into directories
+!*/
+
+# But not these files
+!/.gitignore
+!/.gitattributes
+!/README.md

@@ -1,15 +1,25 @@
 ---
-- name: common
-  src: ssh://git@git@github.com:houssoli/ansible-role-common-tools.git
+- name: commons
+  src: git@github.com:houssoli/ansible-role-common-tools.git
   scm: git
-  version: develop
+  version: master
 
 - name: manage-users
-  src: ssh://git@git@github.com:houssoli/ansible-role-manage-users.git
+  src: git@github.com:houssoli/ansible-role-manage-users.git
+  scm: git
+  version: master
+
+- name: repo-epel
+  src: git@github.com:geerlingguy/ansible-role-repo-epel.git
+  scm: git
+  version: master
+
+- name: postgresql
+  src: git@github.com:houssoli/ansible-role-postgresql.git
   scm: git
   version: develop
 
-- name: repo-epel
-  # src: ssh://git@git@github.com:houssoli/ansible-role-repo-epel.git
-  # scm: git
+- name: keycloak
+  src: git@github.com:houssoli/ansible-keycloak.git
+  scm: git
   version: master
